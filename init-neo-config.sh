@@ -40,7 +40,7 @@ while [[ $# -gt 0 ]]; do
     case "$1" in
     -d|--dry-run)
         _dry_run=1
-	shift
+        shift
         ;;
     -h|--help)
         usage
@@ -53,9 +53,9 @@ while [[ $# -gt 0 ]]; do
             echo "Error: Too many positional arguments." >&2
             usage
             exit 1
-	fi
+        fi
         shift
-	;;
+        ;;
     esac
 done
 
@@ -77,9 +77,9 @@ run_cmd() {
 check_for_nvim_config() {
     if [[ -d "${_NVIM_CONFIG_HOME}" ]]; then
         echo "Error: Neovim config already exists @ ${_NVIM_CONFIG_HOME}" >&2
-	echo "Error: Cannot install new Neovim config" >&2
-	echo "Error: To remove pre-existing config, run: $_SCRIPT_NAME nuke"
-	exit 1
+        echo "Error: Cannot install new Neovim config" >&2
+        echo "Error: To remove pre-existing config, run: $_SCRIPT_NAME nuke"
+        exit 1
     fi
 }
 

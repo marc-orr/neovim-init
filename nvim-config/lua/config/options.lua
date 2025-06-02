@@ -40,4 +40,4 @@ vim.opt.listchars = { tab = "» ", trail = "·", nbsp = "␣" }
 vim.opt.showtabline = 2
 vim.opt.tabline = "%!lua return string.format('%s', MyTabLine())"
 
-vim.cmd.colorscheme "default"
+vim.cmd.colorscheme "shine"
