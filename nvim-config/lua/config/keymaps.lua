@@ -1,0 +1,5 @@
+vim.keymap.set("n", "-", "<cmd>Oil --float<CR>", {desc="Open Parent Directory in Oil"})
+vim.keymap.set('n', '<F9>', ':tabprev<CR>')
+vim.keymap.set('i', '<F9>', '<C-O>:tabprev<CR>')
+vim.keymap.set('n', '<F10>', ':tabnext<CR>')
+vim.keymap.set('i', '<F10>', '<C-O>:tabnext<CR>')
