@@ -66,6 +66,7 @@ install_neovim() {
     have_nvim=1
     nvim --help > /dev/null 2>&1 || have_nvim=0
     if [[ ${have_nvim} == 0 ]]; then
+        run_cmd mkdir -p $HOME/.local/bin/
         run_cmd wget ${_NEOVIM_URL} -O ${_BIN_DIR}/nvim
         run_cmd chmod +x ${_BIN_DIR}/nvim
     fi
